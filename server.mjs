@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "*"],
+    origin: ["http://localhost:3000","https://ecommrace-web-app.up.railway.app", "*"],
 
     credentials: true,
   })
@@ -459,7 +459,6 @@ app.put("/profile/:id", async (req, res) => {
 
 
 app.post("/product", upload.any(), async (req, res) => {
-
 
   console.log("prouct received: ", req.files);
   try {
