@@ -11,8 +11,8 @@ let data = {
   cart: JSON.parse(localStorage.getItem("cartItem")) || [],
   baseUrl:
   window.location.href.indexOf("https") === -1
-    ? "http://localhost:3001"
-    : "https://mongodb-crud-ecommerce-store.herokuapp.com"
+    ? "https://ecommrace-web-app.up.railway.app/"
+    : "http://localhost:3001"
 };  
 
 
